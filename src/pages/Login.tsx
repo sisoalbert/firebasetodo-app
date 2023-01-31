@@ -22,7 +22,9 @@ export default function Login() {
         // Signed in
         const user = userCredential.user;
         console.log("====================================");
-        console.log("user", user);
+        console.log(user.toJSON());
+
+        console.log("user", user.email);
         console.log("====================================");
         setLocation("/");
         // ...
@@ -105,3 +107,29 @@ export default function Login() {
     </div>
   );
 }
+
+// {
+//   "uid": "3qUHXU3h2EZimCt5HFPqM1xSg2o1",
+//   "email": "s@t.com",
+//   "emailVerified": false,
+//   "isAnonymous": false,
+//   "providerData": [
+//       {
+//           "providerId": "password",
+//           "uid": "s@t.com",
+//           "displayName": null,
+//           "email": "s@t.com",
+//           "phoneNumber": null,
+//           "photoURL": null
+//       }
+//   ],
+//   "stsTokenManager": {
+//       "refreshToken": "APJWN8ev8Vnmj3WGPeUtA8cBeOS16i1CnkN5ELi7InpGND8VLz8lvTXD-th8C8hHa-ta1DWi6vhrcw_nJdmSptpPZSxlb7LUFKceINBAnNeMfB3qe5lq3g2TyrncZKw3kY20epxVli7zc3WKqndlqQTvRQZZ1Q6mHjoZNAnT1Y0SYVBqMwtHbh_D6YRIMCxTr9wwgn2ILFqG",
+//       "accessToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImQwNWI0MDljNmYyMmM0MDNlMWY5MWY5ODY3YWM0OTJhOTA2MTk1NTgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vdG9kb2ZpcmViYXNlc3VwIiwiYXVkIjoidG9kb2ZpcmViYXNlc3VwIiwiYXV0aF90aW1lIjoxNjc1MTk3NjQ2LCJ1c2VyX2lkIjoiM3FVSFhVM2gyRVppbUN0NUhGUHFNMXhTZzJvMSIsInN1YiI6IjNxVUhYVTNoMkVaaW1DdDVIRlBxTTF4U2cybzEiLCJpYXQiOjE2NzUxOTc2NDYsImV4cCI6MTY3NTIwMTI0NiwiZW1haWwiOiJzQHQuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbInNAdC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.bRIxVFpKoe_CBYCkcE23jnE4-ivuHWvc1Dy4VAvms5PNwlQIyH9Rpj17KfMtw_KpYXFtC6fI55YU_orcw0oZ2Kn3XWtEpfZ_GYV2M0vPeys3ElqjDWCW8ZcfLAwRC9-TuoXhHaUm5hZ22ZVqJJ9gjsmoWXIej2TBJ-ZvCg7x2y7uuI3bwTGhK5EQB8Y_PfXXzapsa5BVSbaIQIj7EfwQUlky2R-QDHkaaQEBIjRmn-HYnLrnMFS8jbW-FsitRr1laB49fTA7q_LGUwnGXsvkWhI6h5i6NSQWEiSy4KYMTg7xmWWYDsO3IqoX7jnBJMwXEEsuhqW6AKBthzcYEIV-WA",
+//       "expirationTime": 1675201246444
+//   },
+//   "createdAt": "1675196403580",
+//   "lastLoginAt": "1675197646600",
+//   "apiKey": "AIzaSyAwJp7h8R7JWcpwbJGjntm8IM2KVFguEOI",
+//   "appName": "[DEFAULT]"
+// }
