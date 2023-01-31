@@ -33,8 +33,15 @@ const TodoForm = () => {
 
   return (
     <Form>
-      <Form.Control onChange={handleChange} />
-      <Button type="submit" onClick={addTodo}>
+      <Form.Control
+        placeholder="Add your to do todo list here"
+        onChange={handleChange}
+      />
+      <Button
+        style={{ width: "100%", marginTop: 20 }}
+        type="submit"
+        onClick={addTodo}
+      >
         Submit
       </Button>
     </Form>
