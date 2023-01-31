@@ -1,18 +1,12 @@
-// Import this if your are using react-bootstrap library
-import "bootstrap/dist/css/bootstrap.min.css";
-// import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import { Link, Route } from "wouter";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
 
-import "./App.css";
-import TodoForm from "./components/TodoForm";
-import TodoList from "./components/TodoList";
-
-function App() {
-  return (
-    <div style={{ padding: 20 }}>
-      <TodoForm />
-      <TodoList />
-    </div>
-  );
-}
+const App = () => (
+  <div>
+    <Route path="/" component={Home} />
+    <Route path="/login" component={Login} />
+  </div>
+);
 
 export default App;
